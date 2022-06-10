@@ -1,0 +1,75 @@
+:root{
+--primary-font: "Open sans", sans-serif;
+--secondary-font: "Raleway", sans-serif;
+--gray: #393e46;
+--gray-light: #6a727f;
+--gray-dark: #282f3a;
+--gray-darker: #252b36;
+--blue-color: #4944f2;
+--gray-lighter: #f7f8f9;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 1;
+    color: var(--gray-light);
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    outline: none;
+    border: 0;
+  }
+  input {
+    line-height: normal;
+  }
+  section[id] {
+    scroll-margin-top: 30px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .second-font {
+    font-family: var(--secondary-font);
+  }
+  
+  .btn {
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Open sans", sans-serif;
+    height: 55px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 6px;
+  
+}
+::placeholder { /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+@keyframes menuFadein {
+  from {
+      opacity: 0;
+      left: 300px;
+  }
+  to{
+      opacity: 1;
+      left: 0;
+  }
+}
